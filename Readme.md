@@ -26,8 +26,8 @@ The span is using the default indexer immutable, since it is readonly, but we pr
    for (int i = 0; i < twentyToFifty.Length; i++)
    {
        twentyToFifty.GetWritable(i) = (int)Math.Pow((double)twentyToFifty[i], 2); //mutates the Span contents - squares the elements , using GetWritable
-
-   twentyToFifty.PrintArrayContents(); //prints the squared values of the numbers in array twentyToFifty
+       twentyToFifty.PrintArrayContents(); //prints the squared values of the numbers in array twentyToFifty
+   }
 
 ```
 
